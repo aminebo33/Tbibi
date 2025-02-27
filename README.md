@@ -19,17 +19,13 @@ Tbibi is a web application designed to diagnose user symptoms and guide them to 
 This project utilizes various React features, including:
 
 - **React Hooks** to manage the component's state and side effects, respectively. useState is used for handling local state, such as form inputs or flags, while useEffect is used for side effects like data fetching and DOM manipulation.
-
 - **React Router DOM**: For seamless page navigation and removing full-page reloads, which improves the user experience by making transitions smoother and faster.
 
 ## Libraries Used
 
 - **Toastify**: This library allows for easy and customizable toast notifications, providing users with alerts and messages that appear and disappear at the top or bottom of the screen.
-- 
-- **Datepicker**: This component provides an intuitive date picker for users to select dates. It simplifies the process of date selection and can be customized for different date formats, making it a great choice for appointment scheduling or filtering by date.
-
+- **Datepicker**: This component provides an intuitive date picker for users to select dates. It simplifies the process of date selection and can be customized for different date formats, making it a great choice for scheduling or filtering by date.
 - **Select**: This library provides a customizable select dropdown component that can handle dynamic options and multi-selects. It helps improve the user experience when choosing from a list of options, like choosing a doctor, symptom, or location.
-
 - **PropTypes**: This library is used to validate the types of props passed into components, ensuring that the data passed down is of the expected format and improving the maintainability of the application.
 
 ## Cross-Browser Compatibility
