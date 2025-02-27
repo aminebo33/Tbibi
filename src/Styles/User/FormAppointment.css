@@ -1,0 +1,96 @@
+.appointment-form {
+  position: relative;
+  padding: 32px;
+  background-color: white;
+}
+
+.appointment-form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.appointment-form p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: rgb(77, 75, 75);
+  margin-bottom: 20px;
+}
+
+.appointment-form .form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.appointment-form label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: 150px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: calc(100% - 170px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 6px;
+} 
+.react-datepicker-wrapper {
+  width: calc(100% - 170px);
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+.error-popup {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #ffcccc;
+  color: #ff0000;
+  padding: 50px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.error-popup.active {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .appointment-form {
+    padding: 16px;
+  }
+  .error-popup {
+    font-size: 18px;
+  }
+}

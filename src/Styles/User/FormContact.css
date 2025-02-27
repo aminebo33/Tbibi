@@ -1,0 +1,189 @@
+/* General Styles */
+.form-title-content {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+/* Title Styles */
+.form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-title > span {
+  position: relative;
+}
+
+.form-title span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 8px;
+  bottom: -12px;
+}
+
+/* Description Styles */
+.form-description {
+  margin: 0 auto;
+  max-width: 1700px;
+  text-align: center;
+  color: rgb(77, 75, 75);
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  letter-spacing: .8px;
+  line-height: 1.8rem;
+}
+
+/* Form Contact Section */
+.form-contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+.form-section {
+  width: 50%;
+  border: 3px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.form-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Form Group Styles */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.form-group-first {
+  width: 48%;
+}
+
+.form-group-second {
+  margin-bottom: 24px;
+}
+
+.form-group label,
+.form-group-second label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+
+.form-group-first input,
+.form-group-second input,
+.form-group-second textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group-second textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  background-color: #1A8EFD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #0e5ba9;
+}
+
+/* Form Image Section Styles */
+.form-image-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-image-section img {
+  width: 60%;
+  height: 350px;
+}
+
+/* FormAppointment.css */
+.errorr-popup {
+  display: none;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #ffcccc;
+  color: #ff0000;
+  padding: 50px;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.errorr-popup.active {
+  display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .form-title-content {
+      margin-top: 80px;
+      margin-bottom: 10px;
+  }
+  .form-title {
+      font-size: 32px;
+  }
+  .form-description {
+      font-size: 18px;
+  }
+  .form-section {
+      width: 100000%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-title {
+      font-size: 29px;
+      margin-bottom: 30px;
+  }
+  .form-description {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+      font-size: 14px;
+  }
+  .form-image-section img {
+      display: none;
+  }
+  .errorr-popup {
+    font-size: 18px;
+  }
+}

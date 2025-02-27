@@ -1,0 +1,118 @@
+.hero-section {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+    margin-top: 30px;
+}
+
+.text-section {
+    width: 60%;
+    padding: 0 32px;
+}
+
+.text-title {
+    width: 500px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-descritpion {
+    width: 475px;
+    margin: 32px 0;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+    line-height: 1.6rem;
+}
+
+.text-stats {
+    margin-top: 40px;
+    display: flex;
+    gap: 48px;
+}
+
+.text-stats-container {
+    text-align: center;
+}
+
+.text-stats-container > p {
+    color: rgb(77, 75, 75);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    letter-spacing: .7px;
+}
+
+.text-stats-container p:first-child {
+    margin-bottom: 8px;
+    color: #1A8EFD;
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.hero-image-section {
+    width: 40%;
+    max-width: 100%;
+}
+
+.hero-image1 {
+    width: 85%;
+    height: 600px;
+}
+
+@media screen and (max-width: 1500px) {
+    .hero-image1 {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-image-section {
+        display: none;
+    }
+    .text-section {
+        width: 100%;
+        padding: 0;
+    }
+    .text-title, .text-descritpion {
+        width: 100%;
+    }
+    .hero-section {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section {
+        margin-top: 50px;
+    }
+    .text-headline {
+        font-size: 20px;
+    }
+    .text-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .text-descritpion {
+        font-size: 16px;
+    }
+    .text-appointment-btn {
+        font-size: 16px;
+    }
+    .text-stats {
+        gap: 18px;
+        margin-right: 40px;
+    }
+    .text-stats-container > p {
+        font-size: 16px;
+    }
+    .text-stats-container p:first-child {
+        font-size: 22px;
+    }
+}

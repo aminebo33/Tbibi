@@ -1,0 +1,205 @@
+.doctor-section {
+  padding: 32px;
+  margin: 60px 70px;
+  text-align: center;
+  background-color: white;
+}
+
+.doctor-title-content {
+  margin: 64px 0;
+}
+
+.doctor-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.doctor-title > span {
+  position: relative;
+}
+
+.doctor-title span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 8px;
+  left: 0;
+  bottom: -12px;
+}
+
+.doctor-description {
+  margin: 64px;
+  text-align: center;
+  color: rgb(77, 75, 75);
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  letter-spacing: .8px;
+  line-height: 1.8rem;
+  margin-bottom: 70px;
+}
+
+.dt-cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.dt-card {
+  width: 332px;
+  height: 400px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+}
+
+.dt-card:hover {
+  cursor: pointer;
+}
+
+.dt-card-img {
+  width: 100%;
+  height: 275px;
+  padding: 16px 32px 0;
+  background-position: center;
+  background-color: #DDE5F8;
+  border-radius: 20px;
+}
+
+.dt-card-name {
+  margin: 12px 0 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: .7px;
+}
+
+.dt-card-info {
+  margin: 6px 0 8px;
+  color: #494949;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  letter-spacing: .7px;
+  margin-left: 10px;
+}
+
+.dt-card-special {
+  color: #5a5a5a;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .7px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.filter label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.filter .filter-select {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  appearance: none;
+  background-color: #fff;
+  margin: 0 20px 0 0;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter {
+    display: block;
+    align-items: initial;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .filter select {
+    width: 100%;
+  }
+
+  .doctor-title {
+    font-size: 29px;
+  }
+
+  .doctor-description {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .doctor-section {
+    margin-top: 0;
+    padding: 16px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter label {
+    margin-bottom: 5px;
+    display: block;
+    align-items: initial;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .doctor-title-content {
+    margin-bottom: 30px;
+  }
+
+  .doctor-title {
+    font-size: 29px;
+  }
+
+  .doctor-description {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
